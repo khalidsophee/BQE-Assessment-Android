@@ -38,7 +38,7 @@ class TodoAppTest {
 
     @Test
     fun markTodoItemAsComplete() {
-        val title = "BQE Item 1"
+        val title = "BQE Item 2"
 
         // Add item
         composeTestRule.onNodeWithText("Title").performTextInput(title)
@@ -54,7 +54,7 @@ class TodoAppTest {
 
     @Test
     fun deleteTodoItem_removesFromList() {
-        val title = "BQE Item 1"
+        val title = "BQE Item 3"
 
         composeTestRule.onNodeWithText("Title").performTextInput(title)
         composeTestRule.onNodeWithText("Add To-Do").performClick()
@@ -77,7 +77,7 @@ class TodoAppTest {
 
     @Test
     fun validateListContent_addMultipleItems() {
-        val tasks = listOf("Task A", "Task B", "Task C")
+        val tasks = listOf("BQE A", "BQE B", "BQE C")
 
         tasks.forEach {
             composeTestRule.onNodeWithText("Title").performTextInput(it)
