@@ -41,7 +41,9 @@ fun TodoItemRow(item: TodoItem, onToggle: () -> Unit, onDelete: () -> Unit) {
             if (item.description.isNotEmpty()) {
                 Text(
                     text = item.description,
+                    modifier =  Modifier.testTag("desc_${item.id}"),
                     style = MaterialTheme.typography.bodySmall
+
                 )
             }
         }

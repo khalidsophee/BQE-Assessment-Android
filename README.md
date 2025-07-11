@@ -28,13 +28,14 @@ Features:
 
 Testing:
 -----------
-- Unit tests using `JUnit4`
+
 - UI automation tests with `AndroidComposeTestRule`
 - Test coverage includes:
     - Adding tasks
     - Marking tasks complete
     - Deleting tasks
     - Validating list content
+    - Edge Cases
 
 Code Structure:
 ------------------

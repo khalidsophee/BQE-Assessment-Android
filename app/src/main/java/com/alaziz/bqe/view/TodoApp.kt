@@ -20,6 +20,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.unit.dp
 import com.alaziz.bqe.model.TodoItem
 
@@ -71,7 +72,7 @@ fun TodoApp() {
 
         Divider()
 
-        LazyColumn {
+        LazyColumn(modifier = Modifier.testTag("todoList"))  {
             items(todoList) { item ->
                 TodoItemRow(
                     item = item,
