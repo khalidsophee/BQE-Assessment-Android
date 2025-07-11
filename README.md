@@ -57,12 +57,6 @@ Sample Test Tags:
 - `checkbox_{id}` – For checkbox toggle
 - `todo_row_{id}` – For the whole row of an item
 
-Notes:
----------
-- Ensure your project uses Material 3 Compose components
-- The `id` for each task is managed by a counter (`idCounter`)
-- Test failures may happen due to Compose test timing; always validate UI state updates are immediate
-
 Author:
 ----------
 Khalid Aziz
